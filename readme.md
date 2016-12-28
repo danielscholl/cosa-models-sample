@@ -5,13 +5,13 @@
 To Install
 
 ```
-> yarn Install
+> yarn install
 ```
 
 ## Docker Mongo Aliases
-alias mongo-start="docker run -it -d -p 27017:27017 --name mongo mongo:3.2.8 mongod --rest --httpinterface --smallfiles"
-alias mongo-admin="docker run -d --link mongo:mongo -p 8081:8081 mongo-express"
-alias mongo-stop="docker rm -f mongo"
+alias mongo-start="docker run -it -d -p 27017:27017 --name mongo mongo:3.2.8 mongod --rest --httpinterface --smallfiles"  
+alias mongo-admin="docker run -d --link mongo:mongo -p 8081:8081 mongo-express"  
+alias mongo-stop="docker rm -f mongo"  
 
 
 ## Environment Configuration
@@ -23,7 +23,7 @@ alias mongo-stop="docker rm -f mongo"
 | `MONGO_HOST`            | N        | Mongo Database Host Override                                               |
 | `MONGO_PORT`            | N        | Mongo Database Port Override                                               |
 
-__NOTE: Environment variables will automatically pull if a `.env` exists in the cwd.__
+_NOTE: Environment variables will automatically pull if a `.env` exists in the cwd._
 
 
 ### Library Notes
@@ -44,7 +44,7 @@ TOKEN = response from /oauth2/token/info
 ```
 
 ### Profile Methods
-Profile.init(USER, TOKEN)
-Profile.refresh(USER, TOKEN)
-Profile.byUser(USER)
-Profile.byId(profile._id)
+- Profile.init(USER, TOKEN)
+- Profile.refresh(USER, TOKEN)
+- Profile.byUser(USER)
+- Profile.byId(profile._id)
