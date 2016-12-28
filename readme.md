@@ -16,18 +16,18 @@ alias mongo-stop="docker rm -f mongo"
 
 ## Environment Configuration
 
-| Environment Var         | Required | Description                                                                |
+| Environment             | Required | Description                                                                |
 | --------------------    | -------- | -----------                                                                |
 | `MONGO_URL`             | N        | Full Mongo Database URL  (default: mongodb://localhost:27017/test)         |
 | `MONGO_DB`              | N        | Mongo Database Name Override                                               |
 | `MONGO_HOST`            | N        | Mongo Database Host Override                                               |
 | `MONGO_PORT`            | N        | Mongo Database Port Override                                               |
 
-_NOTE: Environment variables will automatically pull if a `.env` exists in the cwd._
+_NOTE: Environment variables will automatically pull if a `.env` exists in the current directory._
 
 
 ### Library Notes
-The model is desgined to have 2 Methods that can be used easily and submit API results directly to it.
+The model is desgined to have Facotry Methods that can be used easily with API results sent directly to it.
 
 USER = response from /api/v2/users/me
 ```javascript
